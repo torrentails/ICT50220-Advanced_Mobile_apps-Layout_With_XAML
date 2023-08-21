@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Layout_2___Details.MainPage">
+
+    <StackLayout>
+        <Label Text="Razor Sharp Spinning Emitting Thing Company - New Client" FontSize="Title" HorizontalOptions="CenterAndExpand"/>
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Label VerticalTextAlignment="Center" Grid.Row="0" Grid.Column="0" Text="First Name:"/>
+            <Entry Grid.Row="0" Grid.Column="1" Placeholder="First name"/>
+
+            <Label VerticalTextAlignment="Center" Grid.Row="1" Grid.Column="0" Text="Last Name:"/>
+            <Entry Grid.Row="1" Grid.Column="1" Placeholder="Last name"/>
+
+            <Label VerticalTextAlignment="Center" Grid.Row="2" Grid.Column="0" Text="Mobile:"/>
+            <Entry Grid.Row="2" Grid.Column="1" Placeholder="Mobile phone number"/>
+
+            <Label VerticalTextAlignment="Center" Grid.Row="3" Grid.Column="0" Text="Email:"/>
+            <Entry Grid.Row="3" Grid.Column="1" Placeholder="Email address"/>
+
+            <Button Grid.Row="4" Grid.Column="1" Text="Save" VerticalOptions="CenterAndExpand" HorizontalOptions="Start" Padding="32, 8"/>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
