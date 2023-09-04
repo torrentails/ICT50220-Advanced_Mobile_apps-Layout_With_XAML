@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Layout_5.MainPage">
+
+    <Grid RowDefinitions="8"
+          ColumnDefinitions="1*"
+          Padding="32">
+
+        <Frame Grid.Row="0" Grid.Column="0"></Frame>
+        <Label Grid.Row="1" Grid.Column="0"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="StartAndExpand"
+               FontSize="Large">
+            £2 2c 1s 6d 1f
+        </Label>
+
+        <Label Grid.Row="2" Grid.Column="0"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="StartAndExpand">
+            Total Worth
+        </Label>
+
+        <Frame Grid.Row="3" Grid.Column="0"
+               BorderColor="White"
+               CornerRadius="0"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="StartAndExpand">
+            
+            <Grid RowDefinitions="2*"
+                  ColumnDefinitions="3*">
+            
+                <Button Grid.Row="0" Grid.Column="0"
+                        Grid.RowSpan="2"
+                        BorderWidth="0"
+                        BackgroundColor="Transparent"
+                        WidthRequest="32"
+                        HeightRequest="32"
+                        HorizontalOptions="Start"
+                        VerticalOptions="Center"
+                        Text="-">
+                </Button>
+
+                <Label Grid.Row="0" Grid.Column="1"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       FontSize="Large">
+                    2
+                </Label>
+
+                <Label Grid.Row="1" Grid.Column="1"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand">
+                    pounds
+                </Label>
+
+                <Button Grid.Row="0" Grid.Column="2"
+                        Grid.RowSpan="2"
+                        BorderWidth="0"
+                        BackgroundColor="Transparent"
+                        WidthRequest="32"
+                        HeightRequest="32"
+                        HorizontalOptions="End"
+                        VerticalOptions="Center"
+                        Text="+">
+                </Button>
+
+            </Grid>
+        </Frame>
+    </Grid>
+
+</ContentPage>
